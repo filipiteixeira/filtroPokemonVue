@@ -125,7 +125,7 @@ export default {
 
 .card-pokemon-descricao {
   display: flex;
-  justify-content: space-between";
+  justify-content: space-between;
 }
 
 .lista-pokemon {
