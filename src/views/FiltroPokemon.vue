@@ -18,7 +18,7 @@
         :key="index"
       >
         <img :src="pokemon.sprites.front_default" alt="" width="200px" />
-        <div style="display: flex; justify-content: space-between">
+        <div class="card-pokemon-descricao">
           <span>{{
             pokemon.name.charAt(0).toUpperCase() + pokemon.name.slice(1)
           }}</span>
@@ -123,6 +123,11 @@ export default {
   padding: 10px;
 }
 
+.card-pokemon-descricao {
+  display: flex;
+  justify-content: space-between";
+}
+
 .lista-pokemon {
   display: flex;
   flex-wrap: wrap;
@@ -134,11 +139,10 @@ export default {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* 100% da altura da viewport, centralizando verticalmente */
+  height: 100vh;
   text-align: center;
 }
 
-/* Estilo para ajustar tamanho e família da fonte */
 .pokemon-n-encontrado p {
   font-size: 18px;
 }
